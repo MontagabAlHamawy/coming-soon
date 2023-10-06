@@ -131,6 +131,9 @@ p {
     bottom: 40px;
     left: 300px;
 }
+.pa{
+    display: none;
+}
 
 
 @keyframes wave {
@@ -244,7 +247,8 @@ p {
 
     .per {
         font-size: 45px;
-        left: 54px;
+        right: 54px;
+        bottom: 23px;
     }
 
     .logo {
@@ -261,12 +265,19 @@ p {
     .bg {
         width: 180px;
         margin-top: 179px;
-        margin-left: -26px;
+        margin-left: -37px;
     }
 
     .container {
         transform: rotate(90deg);
         top: 417px;
         left: -121px;
+        /* display: none; */
+    }
+    .pp{
+        display: none;
+    }
+    .pa{
+        display: block;
     }
 }
