@@ -1,0 +1,269 @@
+:root {
+    --main-color-1: #ebf5ff;
+    --main-color-2: #1d6267;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kufam', sans-serif;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+}
+
+.cont-1 {
+    flex: 6;
+    width: 100%;
+    background: var(--main-color-1);
+}
+
+.cont-2 {
+    flex: 4;
+    width: 100%;
+    background: var(--main-color-2);
+}
+
+p {
+    font-weight: 800;
+    font-size: 128px;
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+}
+
+.p-1 {
+    text-align: right;
+    color: var(--main-color-2);
+}
+
+.coming {
+    margin-top: 30px;
+}
+
+.icon {
+    width: 250px;
+    height: 150px;
+    border-bottom-right-radius: 200px;
+    background: transparen;
+    border: 5px solid var(--main-color-2);
+    position: absolute;
+    top: 160px;
+    left: -6px;
+}
+
+.logo {
+    width: 250px;
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+}
+
+.bg {
+    width: 350px;
+    position: absolute;
+    top: 70px;
+}
+
+.container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.wav {
+    position: absolute;
+    width: 40px;
+    height: 70px;
+    background: #65959c;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    animation: wave 4s infinite linear;
+    top: -60px;
+}
+
+.w-2 {
+    animation-delay: 0.3s;
+    left: 35px;
+}
+
+.w-3 {
+    animation-delay: 0.6s;
+    left: 90px;
+}
+
+.w-4 {
+    animation-delay: 0.9s;
+    left: 145px;
+}
+
+.w-5 {
+    animation-delay: 1.2s;
+    left: 200px;
+}
+
+
+.wav.active {
+    background-color: var(--main-color-1);
+}
+
+.per {
+    font-size: 50px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background-color: transparent;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 40px;
+    left: 300px;
+}
+
+
+@keyframes wave {
+    0% {
+        top: -60px;
+    }
+
+    25% {
+        top: -80px;
+    }
+
+    50% {
+        top: -60px;
+    }
+
+    75% {
+        top: -80px;
+    }
+
+    100% {
+        top: -60px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    p {
+        font-size: 110px;
+    }
+
+    .wav {
+        width: 35px;
+        height: 60px;
+    }
+
+    .w-2 {
+        left: 30px;
+    }
+
+    .w-3 {
+        left: 80px;
+    }
+
+    .w-4 {
+        left: 130px;
+    }
+
+    .w-5 {
+        left: 180px;
+    }
+
+    .per {
+        font-size: 45px;
+        left: 265px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .icon {
+        width: 200px;
+        height: 120px;
+    }
+
+    .bg {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .cont {
+        justify-content: start;
+        padding-top: 200px;
+        height: 60.9vh;
+    }
+
+    p {
+        font-size: 64px;
+    }
+
+    .cont-1 {
+        flex: 5;
+    }
+
+    .cont-2 {
+        flex: 5;
+    }
+
+
+    .wav {
+        width: 20px;
+        height: 40px;
+    }
+
+    .w-2 {
+        left: 20px;
+    }
+
+    .w-3 {
+        left: 45px;
+    }
+
+    .w-4 {
+        left:70px;
+    }
+
+    .w-5 {
+        left: 95px;
+    }
+
+    .per {
+        font-size: 45px;
+        left: 100px;
+    }
+
+    .logo {
+        width: 70px;
+        bottom: 10px;
+        left: 20px;
+    }
+
+    .icon {
+        width: 100px;
+        height: 70px;
+    }
+
+    .bg {
+        width: 160px;
+    }
+
+    .container {
+        transform: rotate(90deg);
+        top: 230px;
+        left: -130px;
+    }
+}
