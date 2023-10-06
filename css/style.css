@@ -201,11 +201,11 @@ p {
 }
 
 @media screen and (max-width:760px) {
-    .cont {
-        justify-content: start;
-        padding-top: 200px;
+    /* body{
         height: 60.9vh;
     }
+    .cont {
+        height: 60.9vh; */
 
     p {
         font-size: 64px;
@@ -234,7 +234,7 @@ p {
     }
 
     .w-4 {
-        left:70px;
+        left: 70px;
     }
 
     .w-5 {
@@ -243,27 +243,29 @@ p {
 
     .per {
         font-size: 45px;
-        left: 100px;
+        left: 79px;
+        bottom: 55px;
     }
 
     .logo {
-        width: 70px;
-        bottom: 10px;
-        left: 20px;
+        width: 107px;
+        bottom: 23px;
+        left: 27px;
     }
 
     .icon {
-        width: 100px;
-        height: 70px;
+        width: 107px;
+        height: 83px;
     }
 
     .bg {
-        width: 160px;
+        width: 194px;
+        margin-top: 179px;
     }
 
     .container {
         transform: rotate(90deg);
-        top: 230px;
-        left: -130px;
+        top: 417px;
+        left: -121px;
     }
 }
