@@ -212,11 +212,12 @@ p {
     }
 
     .cont-1 {
-        flex: 5;
+        flex: 6;
+        z-index: 999;
     }
 
     .cont-2 {
-        flex: 5;
+        flex: 4;
     }
 
 
@@ -244,7 +245,6 @@ p {
     .per {
         font-size: 45px;
         left: 79px;
-        bottom: 55px;
     }
 
     .logo {
@@ -259,8 +259,9 @@ p {
     }
 
     .bg {
-        width: 194px;
+        width: 184px;
         margin-top: 179px;
+        margin-left: -25px;
     }
 
     .container {
