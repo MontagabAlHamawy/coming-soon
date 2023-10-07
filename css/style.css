@@ -2,6 +2,9 @@
     --main-color-1: #ebf5ff;
     --main-color-2: #1d6267;
 }
+*{
+    overflow: hidden;
+}
 
 body {
     margin: 0;
@@ -9,10 +12,10 @@ body {
     padding: 0;
     font-family: 'Kufam', sans-serif;
     color: #ffffff;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .cont {
@@ -177,33 +180,21 @@ p {
 }
 
 @media screen and (max-width:760px) {
-    /* body{
-        height: 60.9vh;
-    }*/
-    .cont {
-        height: 97vh; 
-    }
-
     p {
         font-size: 64px;
     }
 
-    .cont-1 {
-        flex: 6;
+     .cont-1 {
         z-index: 999;
     }
 
-    .cont-2 {
-        flex: 4;
-    }
-
     .per {
-        font-size: 45px;
+        font-size: 24px;
         position: static;
     }
 
     .logo {
-        width: 107px;
+        width: 140px;
         bottom: 35px;
         left: 27px;
     }
@@ -256,15 +247,18 @@ p {
         display: flex;
         flex-direction: column;
         position: absolute;
-        bottom: 17px;
-        right: 17px;
+        bottom: 26px;
+        right: 24px;
+        width: 60px;
     }
 
     .container {
         display: flex;
-        flex-direction: column;
-        position: static;
-        margin-bottom: -94px;
+    flex-direction: column;
+    position: static;
+    margin-bottom: -138px;
+    height: 261px;
+}
     }
 
 }
