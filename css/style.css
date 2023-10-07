@@ -5,10 +5,11 @@
 
 body {
     margin: 0;
+    position: relative;
     padding: 0;
     font-family: 'Kufam', sans-serif;
     color: #ffffff;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,13 +25,11 @@ body {
 
 .cont-1 {
     flex: 6;
-    width: 100%;
     background: var(--main-color-1);
 }
 
 .cont-2 {
     flex: 4;
-    width: 100%;
     background: var(--main-color-2);
 }
 
@@ -131,32 +130,6 @@ p {
     bottom: 40px;
     left: 300px;
 }
-.pa{
-    display: none;
-}
-
-
-@keyframes wave {
-    0% {
-        top: -60px;
-    }
-
-    25% {
-        top: -80px;
-    }
-
-    50% {
-        top: -60px;
-    }
-
-    75% {
-        top: -80px;
-    }
-
-    100% {
-        top: -60px;
-    }
-}
 
 @media screen and (max-width:1024px) {
     p {
@@ -223,37 +196,14 @@ p {
         flex: 4;
     }
 
-
-    .wav {
-        width: 20px;
-        height: 40px;
-    }
-
-    .w-2 {
-        left: 20px;
-    }
-
-    .w-3 {
-        left: 45px;
-    }
-
-    .w-4 {
-        left: 70px;
-    }
-
-    .w-5 {
-        left: 95px;
-    }
-
     .per {
         font-size: 45px;
-        right: 54px;
-        bottom: 23px;
+        position: static;
     }
 
     .logo {
         width: 107px;
-        bottom: 23px;
+        bottom: 35px;
         left: 27px;
     }
 
@@ -268,16 +218,98 @@ p {
         margin-left: -37px;
     }
 
+
+    .wav {
+        position: relative;
+        width: 40px;
+        height: 20px;
+        background: #65959c;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        animation: wavee 2s infinite linear;
+        top: -30px;
+        left: 0px;
+    }
+
+    .w-2 {
+        animation-delay: 0.3s;
+        top: -35px;
+    }
+
+    .w-3 {
+        animation-delay: 0.6s;
+        top: -40px;
+    }
+
+    .w-4 {
+        animation-delay: 0.9s;
+        top: -45px;
+    }
+
+    .w-5 {
+        animation-delay: 1.2s;
+        top: -50px;
+    }
+
+    .comm {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 17px;
+        right: 17px;
+    }
+
     .container {
-        transform: rotate(90deg);
-        top: 417px;
-        left: -121px;
-        /* display: none; */
+        display: flex;
+        flex-direction: column;
+        position: static;
+        margin-bottom: -94px;
     }
-    .pp{
-        display: none;
+
+}
+
+
+@keyframes wave {
+    0% {
+        top: -60px;
     }
-    .pa{
-        display: block;
+
+    25% {
+        top: -80px;
     }
+
+    50% {
+        top: -60px;
+    }
+
+    75% {
+        top: -80px;
+    }
+
+    100% {
+        top: -60px;
+    }
+}
+
+@keyframes wavee {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: 10px;
+    }
+
+    50% {
+        left: 0px;
+    }
+
+    75% {
+        left: -10px;
+    }
+
+    100% {
+        left: 0px;
+    }
+
 }
