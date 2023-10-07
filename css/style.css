@@ -179,9 +179,10 @@ p {
 @media screen and (max-width:760px) {
     /* body{
         height: 60.9vh;
-    }
+    }*/
     .cont {
-        height: 60.9vh; */
+        height: 97vh; 
+    }
 
     p {
         font-size: 64px;
