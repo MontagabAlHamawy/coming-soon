@@ -180,6 +180,16 @@ p {
 }
 
 @media screen and (max-width:760px) {
+<<<<<<< HEAD
+=======
+/*    body{
+        margin-top: -17px;
+    } */
+/*     .cont {
+        height: 97vh; 
+    } */
+
+>>>>>>> 0a7f554a7c9bef0f37950081f98a21afad425d03
     p {
         font-size: 64px;
     }
