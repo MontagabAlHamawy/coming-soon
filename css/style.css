@@ -2,7 +2,8 @@
     --main-color-1: #ebf5ff;
     --main-color-2: #1d6267;
 }
-*{
+
+* {
     overflow: hidden;
 }
 
@@ -83,8 +84,10 @@ p {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 40px;
-    left: 40px;
+    bottom: -83px;
+    left: 28px;
+    width: 282px;
+    height: 200px;
 }
 
 .wav {
@@ -94,28 +97,29 @@ p {
     background: #65959c;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    animation: wave 4s infinite linear;
-    top: -60px;
+    animation: wave 2s infinite linear;
+    top: 3px;
+    left: 0px;
 }
 
 .w-2 {
     animation-delay: 0.3s;
-    left: 35px;
+    left: 50px;
 }
 
 .w-3 {
     animation-delay: 0.6s;
-    left: 90px;
+    left: 105px;
 }
 
 .w-4 {
     animation-delay: 0.9s;
-    left: 145px;
+    left: 160px;
 }
 
 .w-5 {
     animation-delay: 1.2s;
-    left: 200px;
+    left: 215px;
 }
 
 
@@ -180,21 +184,18 @@ p {
 }
 
 @media screen and (max-width:760px) {
-<<<<<<< HEAD
-=======
-/*    body{
+
+    /*    body{
         margin-top: -17px;
     } */
-/*     .cont {
+    /*     .cont {
         height: 97vh; 
     } */
-
->>>>>>> 0a7f554a7c9bef0f37950081f98a21afad425d03
     p {
         font-size: 64px;
     }
 
-     .cont-1 {
+    .cont-1 {
         z-index: 999;
     }
 
@@ -230,7 +231,7 @@ p {
         border-bottom-right-radius: 20px;
         animation: wavee 2s infinite linear;
         top: -30px;
-        left: 0px;
+        left: -10px;
     }
 
     .w-2 {
@@ -264,11 +265,11 @@ p {
 
     .container {
         display: flex;
-    flex-direction: column;
-    position: static;
-    margin-bottom: -138px;
-    height: 261px;
-}
+        flex-direction: column;
+        position: static;
+        margin-bottom: -161px;
+        width: 80px;
+        height: 300px;
     }
 
 }
@@ -276,45 +277,45 @@ p {
 
 @keyframes wave {
     0% {
-        top: -60px;
+        top: 10px;
     }
 
     25% {
-        top: -80px;
+        top: 20px;
     }
 
     50% {
-        top: -60px;
+        top: 10px;
     }
 
     75% {
-        top: -80px;
+        top:0px;
     }
 
     100% {
-        top: -60px;
+        top: 10px;
     }
 }
 
 @keyframes wavee {
     0% {
-        left: 0px;
-    }
-
-    25% {
-        left: 10px;
-    }
-
-    50% {
-        left: 0px;
-    }
-
-    75% {
         left: -10px;
     }
 
-    100% {
+    25% {
         left: 0px;
+    }
+
+    50% {
+        left: -10px;
+    }
+
+    75% {
+        left: -20px;
+    }
+
+    100% {
+        left: -10px;
     }
 
 }
