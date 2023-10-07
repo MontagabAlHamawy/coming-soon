@@ -177,9 +177,9 @@ p {
 }
 
 @media screen and (max-width:760px) {
-    /* body{
-        height: 60.9vh;
-    }*/
+   body{
+        margin-top: -17px;
+    }
 /*     .cont {
         height: 97vh; 
     } */
