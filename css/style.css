@@ -68,7 +68,7 @@ p {
 .logo {
     width: 250px;
     position: absolute;
-    bottom: 30px;
+    bottom: 40px;
     left: 40px;
 }
 
@@ -84,42 +84,42 @@ p {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: -83px;
-    left: 28px;
+    bottom: -74px;
+    right: 128px;
     width: 282px;
     height: 200px;
 }
 
 .wav {
     position: absolute;
-    width: 40px;
-    height: 70px;
+    width: 32px;
+    height: 64px;
     background: #65959c;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     animation: wave 2s infinite linear;
     top: 10px;
-    left: 0px;
+    left: 32px;
 }
 
 .w-2 {
     animation-delay: 0.3s;
-    left: 60px;
+    left: 80px;
 }
 
 .w-3 {
     animation-delay: 0.6s;
-    left: 111px;
+    left: 128px;
 }
 
 .w-4 {
     animation-delay: 0.9s;
-    left: 164px;
+    left: 176px;
 }
 
 .w-5 {
     animation-delay: 1.2s;
-    left: 217px;
+    left: 224px;
 }
 
 
@@ -128,14 +128,14 @@ p {
 }
 
 .per {
-    font-size: 50px;
+    font-size: 48px;
     color: transparent;
     -webkit-text-stroke: 1px white;
     background-color: transparent;
     margin-top: 50px;
     position: absolute;
     bottom: 40px;
-    left: 300px;
+    right: 40px;
 }
 
 @media screen and (max-width:1024px) {
@@ -146,6 +146,7 @@ p {
     .wav {
         width: 35px;
         height: 60px;
+        left: 9px;
     }
 
     .w-2 {
@@ -165,9 +166,10 @@ p {
     }
 
     .per {
-        font-size: 45px;
-        left: 265px;
+        font-size: 39px;
+        right: 20px;
     }
+
 
     .logo {
         width: 200px;
@@ -181,13 +183,18 @@ p {
     .bg {
         width: 320px;
     }
+    .container{
+        right: 59px;
+        bottom: -91px;
+    }
 }
 
 @media screen and (max-width:760px) {
 
-        body{
-        margin-top: -50px;
-    } 
+    body {
+        padding-bottom: 50px;
+    }
+
     /*     .cont {
         height: 97vh; 
     } */
@@ -206,7 +213,7 @@ p {
 
     .logo {
         width: 140px;
-        bottom: 60px;
+        bottom: 120px;
         left: 27px;
     }
 
@@ -258,7 +265,7 @@ p {
         display: flex;
         flex-direction: column;
         position: absolute;
-        bottom: 52px;
+        bottom: 112px;
         right: 24px;
         width: 60px;
     }
@@ -289,7 +296,7 @@ p {
     }
 
     75% {
-        top:0px;
+        top: 0px;
     }
 
     100% {
